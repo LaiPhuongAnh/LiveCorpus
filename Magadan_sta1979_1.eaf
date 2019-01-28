@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2019-01-28T15:53:12+04:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/Users/1/Downloads/Magadan_sta1979_1.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="../../Downloads/Magadan_sta1979_1.wav"/>
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:268fb332-26dd-4cb8-bf50-ea84c06f852e</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">3</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="55222"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="112888"/>
+    </TIME_ORDER>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" PARTICIPANT="sta" TIER_ID="sta@speech">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>Пошла учиться в школу и закончила школу. Вот, потом у меня был период, когда я училась в медицинском колледже на зубного врача. Учёба у меня пошла хорошо, я закончила её с красным дипломом. (усмешка) По профессии работать не получилось, потому что была на тот момент у меня уже семья и маленький ребёнок. Чтобы ехать обучаться на высшее образование, в общем, не было возможности. В 18 лет я вышла замуж, ээ, у меня есть муж и двое детей, имена обязательно называть? Вот. Дети  уже сейчас на данный момент практически взрослые: дочке 21 год, сыну 12 лет. Он занимается бальными танцами, дочка учится в институте.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="utterance-acc" PARENT_REF="sta@speech" PARTICIPANT="sta" TIER_ID="sta@acc">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a2" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>Пошла' учи'ться в шко'лу, зако'нчила шко'лу. Вот, пото'м у меня' был пери'од, когда' я учи'лась в медици'нском колле'дже наa зубно'го врача'. / Учё'ба у меня' пошла' хорошо', / я зако'нчила её' с кра'сным дипло'мом. (усмешка) По профе'ссии рабо'тать не получи'лось, потому' что / была' на тот моме'нт у меня' уже' семья' и ма'ленький ребё'нок. Что'бы е'хать да'льше обуча'ться на вы'сшее образова'ние, в о'бщем, не бы'ло возмо'жности./ Э, в 18 лет я вы'шла за'муж, / ээ, у меня' есть муж / и дво'е дете'й, имена' обяза'тельно называ'ть? Вот. Де'ти  уже' сейча'с на да'нный моме'нт практи'чески взро'слые: до'чке 21 год, сы'ну 12 лет. / Он занима'ется ба'льными та'нцами, до'чка у'чится в институ'те.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="utterance-type" PARENT_REF="sta@speech" PARTICIPANT="sta" TIER_ID="sta@utype">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a3" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>narritive</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="utterance-acc" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="utterance-type" TIME_ALIGNABLE="false"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>
